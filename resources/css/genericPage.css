@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap'); 
+
+:root {
+  --primary-color: #362222;
+  --secondary-color: #2B2B2B;
+  --primary-75: #403636;
+  --primary-50: #362222;
+  --primary-25: #998787;
+
+  --main-font: 'Mulish', sans-serif;
+}
+
+* {
+  font-family: var(--main-font);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48.83px;
+}
+
+h2 {
+  font-size: 39.06px;
+}
+
+h3 {
+  font-size: 31.25px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  background-color: #2B2B2B;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand {
+  color: var(--third-color);
+} 
+
+.icon--small {
+  height: 20px;
+  width: 20px;
+}
+
+.icon--medium {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--large {
+  height: 80px;
+  width: 80px;
+}
+
+.icon--extra-large {
+  height: 140px;
+  width: 140px;
+}

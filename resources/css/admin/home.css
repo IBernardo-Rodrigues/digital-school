@@ -1,0 +1,31 @@
+main {
+  height: 90%;
+}
+
+.home {
+  padding: 20px 50px;
+}
+
+.home, .cards-info, .card-info {
+  height: 100%;
+}
+
+.card-info {
+  background-color: var(--primary-75);
+  padding: .3rem;
+}
+
+.card-info h3 {
+  height: 10%;
+}
+
+.amount-container {
+  height: 90%;
+}
+
+.amount {
+  font-size: 80px;
+  background: linear-gradient(#13547A, #83D4CB);
+  background-clip: text;
+  color: transparent;
+}

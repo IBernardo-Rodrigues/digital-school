@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 
+  10vh
+  auto
+  70px;
+}
+
+.profile-container {
+  position: relative;
+  background-color: var(--primary-75);
+  width: 95%;
+  padding: 20px;
+}
+
+.btn-back {
+  position: absolute;
+  background-color: var(--primary-75);
+  z-index: 2;
+}
+
+.btn {
+  width: 120px;
+}
+
+.btn:hover {
+  border: 1px solid var(--primary-25);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background-image: linear-gradient(to right, #A6C0FE, #F68084);
+  z-index:1;
+}
+
+.profile {
+  margin-top: 70px; 
+}
+
+.profile, .profile * {
+  z-index: 2;
+}
+
+.profile-picture {
+  position: relative;
+}
+
+.profile-picture img {
+  position: relative;
+  width: 120px;
+}
+
+.edit-picture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.edit-picture label {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-50);
+  padding: 10px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+}
+
+.edit-picture input {
+  display: none;
+}
+
+.btn-update {
+  background-color: var(--primary-50);
+}
+
+.form-group {
+  width: auto;
+}
+
+input {
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 2px solid var(--primary-25);
+  outline: none;
+  padding: 3px 5px;
+  /* width: 100%; */
+  height: 40px;
+  color: #fff;
+}
+
+.others-container {
+  background-color: #fff;
+  width: 95%;
+  min-height: 200px;
+  background-color: var(--primary-75);
+  padding: 10px 20px;
+}

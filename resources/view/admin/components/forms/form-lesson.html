@@ -1,0 +1,47 @@
+<section class="new-lesson">
+  <h2 class="text-white mb-4">
+   {{action}} aula
+  </h2>
+
+  <form method="POST">
+    <div class="form-group mb-3">
+      <label for="" class="text-white mb-1">
+        Nome *
+      </label>
+      <input type="text" name="name" value="{{valueName}}" placeholder="Ex: Introdução ao tráfego pago" class="d-block">
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="" class="text-white mb-1">
+        URL da aula *
+      </label>
+      <input type="text" name="lesson-url" value="{{valueUrl}}" placeholder="Ex: https://youtube.com/watch?v=xxxxxxxxx" class="d-block">
+    </div>
+    
+      <div class="form-group my-3">
+        <label for="" class="text-white mb-1">
+          Módulo *
+        </label>
+        <select name="lesson-module" class="d-block">
+          <option value="">Escolha um módulo</option>
+          {{moduleOptions}}
+        </select>
+      </div>
+
+      <div class="divider-line">
+        <span></span>
+      </div>
+
+    <div class="buttons d-flex gap-3">
+      <input type="submit" value="Enviar" name="send-data" class="btn-submit btn fw-bold mt-3">
+
+      <a href="{{URL}}/admin/lessons" class="btn-back btn mt-3 text-decoration-none text-white fw-semibold">
+        Voltar
+      </a>
+    </div>
+  </form>
+</section>
+
+<section class="modals">
+  {{modal}}
+</section>

@@ -1,0 +1,41 @@
+.new-user {
+  padding: 20px 50px;
+}
+
+input, select {
+  background-color: transparent;
+  border-radius: .5rem;
+  border: 2px solid var(--primary-25);
+  outline: none;
+  padding: 3px 5px;
+  width: 500px;
+  height: 40px;
+  color: #fff;
+}
+
+::placeholder {
+  color: var(--primary-25);
+}
+
+select * {
+  color: #fff;
+  background-color: var(--primary-75);
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-back {
+  border: 1px solid var(--primary-75);
+}
+
+.btn {
+  width: 180px;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}

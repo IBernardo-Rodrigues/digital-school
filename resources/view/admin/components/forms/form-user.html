@@ -1,0 +1,53 @@
+<section class="new-user">
+  <h1 class="text-white">
+   {{action}} usuário
+  </h1>
+
+  <form method="POST">
+    <div class="form-group mb-3">
+      <label for="" class="input-label text-white mb-1">
+        Nome *
+      </label>
+      <input type="text" name="username" value="{{valueName}}" placeholder="Nome do usuário" class="d-block" required>
+    </div>
+    
+    <div class="form-group mb-3">
+      <label for="" class="input-label text-white mb-1">
+        Email *
+      </label>
+      <input type="email" name="email" value="{{valueEmail}}" placeholder="Email do usuário" class="d-block" required>
+    </div>
+    
+    <div class="form-group mb-3">
+      <label for="" class="input-label text-white mb-1">
+        Senha *
+      </label>
+      <input type="password" name="password" value="{{valuePassword}}" placeholder="Senha do usuário" class="d-block" required>
+      <div class="form-text">Deixe em branco para não alterar</div>
+    </div>
+    
+    <div class="form-group mb-3">
+      <label for="" class="input-label text-white mb-1">
+        Função *
+      </label>
+      <select name="role" class="d-block">
+        <option value="">
+          Selecione uma função
+        </option>
+        {{roleOptions}}
+      </select>
+    </div>
+
+    <div class="buttons d-flex gap-3">
+      <input type="submit" value="Enviar" name="send-data" class="btn-submit btn fw-bold mt-3">
+
+      <a href="{{URL}}/admin/users" class="btn-back btn mt-3 text-decoration-none text-white fw-semibold">
+        Voltar
+      </a>
+    </div>
+  </form>
+</section>
+
+<section class="modals">
+  {{modals}}
+</section>

@@ -1,0 +1,32 @@
+<section class="lessons">
+  <div class="d-flex justify-content-between">
+    <h2 class="text-white">
+      Aulas
+    </h2>
+
+    <a href="{{URL}}/admin/lessons/new" class="btn-add-lesson btn my-3 text-decoration-none text-white d-flex align-items-center">
+      Adicionar
+      <span>
+        <img src="{{URL}}/resources/svg/plus-icon.svg" alt="Adicionar aula" class="icon--small">
+      </span>
+    </a>
+  </div>
+
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>URL</th>
+        <th>Módulo</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{lessons}}
+    </tbody>
+  </table>
+</section>
+
+<section class="modals">
+  {{modals}}
+</section>

@@ -1,0 +1,79 @@
+body {
+  display: grid;
+  grid-template-rows: 
+  70px
+  auto;
+}
+
+.lesson {
+  height: 90%;
+  padding: 15px 30px;
+}
+
+.btn-back {
+  border: 1px solid var(--primary-75);
+}
+
+.btn {
+  width: 120px;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.lesson-container {
+  height: 100%;
+  grid-template-columns: 
+  70%
+  30%;  
+}
+
+.lesson-video-container  {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.lesson-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 100%;
+}
+
+.lessons-list-container {
+  height: 100%;
+}
+
+.lessons-list {
+  width: 100%;
+  height: 95%;
+  background-color: var(--primary-75);
+  list-style: none;
+}
+
+.sub-menu {
+  display: none;
+  list-style: none;
+}
+
+.sub-menu--opened {
+  display: block;
+}
+
+.sub-menu li {
+  border-color: var(--primary-25) !important;
+}
+
+.icon-lesson {
+  width: 30px;
+  height: 30px;
+  transition: .5s;
+}
+
+.icon-lesson--opened {
+  transform: rotate(90deg);
+}

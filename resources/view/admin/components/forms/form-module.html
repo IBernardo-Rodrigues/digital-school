@@ -1,0 +1,50 @@
+<section class="new-module">
+  <h1 class="text-white">
+   {{action}} módulo
+  </h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <div class="form-group mb-3">
+      <label for="" class="text-white mb-1">
+        Nome do módulo *
+      </label>
+      <input type="text" name="name" value="{{valueName}}" placeholder="Nome do módulo" class="d-block">
+    </div>
+
+    <div class="form-group">
+      <label for="module-cover" class="label-upload d-block d-flex align-items-center justify-content-center gap-2 text-white mb-1 fw-bold rounded">
+        <span>
+          Adicionar capa
+        </span>
+        <img src="{{URL}}/resources/svg/upload-icon.svg" alt="Fazer upload da capa" class="icon--small">
+      </label>
+      <input type="file" name="module-cover" id="module-cover">
+      <div class="form-text">Adicione capas com a dimensão 1280x1920</div>
+    </div>
+
+    {{currentCover}}
+
+    <div class="divider-line">
+      <span></span>
+    </div>
+
+    <div class="buttons d-flex gap-3">
+      <input type="submit" value="Enviar" name="send-data" class="btn-submit btn fw-bold mt-3">
+
+      <a href="{{URL}}/admin/modules" class="btn-back btn mt-3 text-decoration-none text-white fw-semibold">
+        Voltar
+      </a>
+    </div>
+
+    <!-- <button type="button" class="btn btn-outline-danger mt-3 ms-4">
+      <a href="{{URL}}/admin/modules" class="text-decoration-none text-white">
+        Voltar
+      </a>
+    </button>
+    <input type="submit" value="Enviar" name="send-data" class="btn btn-success d-block mt-3 ms-4"> -->
+  </form>
+</section>
+
+<section class="modals">
+  {{modal}}
+</section>

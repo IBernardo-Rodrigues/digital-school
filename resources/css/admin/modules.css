@@ -1,0 +1,21 @@
+.modules {
+  padding: 20px 50px;
+}
+
+.btn-add-lesson {
+  background-color: var(--primary-color);
+}
+
+.btn-add-lesson:hover {
+  border: 1px solid var(--primary-75);
+}
+
+.table {
+  background-color: var(--primary-75);
+  border: 1px solid var(--primary-25);
+  color: #fff;
+}
+
+.table .btn {
+  background-color: var(--primary-color);
+}

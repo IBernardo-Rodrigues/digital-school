@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+.signup {
+  width: 80%;
+}
+
+input {
+  background-color: transparent;
+  border-radius: .5rem;
+  padding: .5rem;
+  border: 2px solid var(--primary-25);
+  width: 400px;
+  outline: none;
+}
+
+::placeholder {
+  color: var(--primary-25);
+}
+
+input[type="submit"] {
+  width: 380px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+a {
+  color: var(--primary-25);
+}

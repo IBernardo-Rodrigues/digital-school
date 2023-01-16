@@ -1,0 +1,22 @@
+.home {
+  padding: 10px 20px;
+}
+
+.modules {
+  max-width: 100vw;
+}
+
+.modules-cards {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.card {
+  min-height: 370px;
+  min-width: 250px;
+  
+  max-height: 370px;
+  max-width: 250px;
+
+  background-color: var(--primary-75);
+}

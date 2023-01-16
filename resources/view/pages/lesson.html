@@ -1,0 +1,83 @@
+<section class="lesson">
+
+  <a href="{{URL}}/" class="btn-back btn text-white fw-bold mb-2 d-block">
+    <span>
+      <img src="{{URL}}/resources/svg/arrow-left.svg" alt="Voltar" class="icon--small me-2">
+    </span>
+
+    Voltar
+  </a>
+
+  <h2>
+    <h2 class="text-white">
+      {{lessonTitle}}
+    </h2>
+  </h2>
+
+  <div class="lesson-container d-flex flex-column d-xxl-grid gap-3">
+    <div class="lesson-video-container">
+      <iframe class="lesson-video" src="https://www.youtube.com/embed/{{videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="lessons-list-container">
+      <ul class="lessons-list text-white p-3">
+        <li>
+          <div class="link-icon d-flex align-items-center gap-2">
+            <img src="{{URL}}/resources/svg/chevron-right.svg" alt="Ver aulas do módulo" class="icon-lesson d-block">
+            <h5 class="fw-semibold m-0">{{moduleName}}</h5>
+          </div>
+          <ul class="sub-menu gap-3 pt-3">
+            {{lessonsLinks}}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="lesson">
+  <h2 class="text-white">
+    {{lessonTitle}}
+  </h2>
+  
+  <div class="lesson-container row mx-auto">
+    <div class="lesson-side col-lg-7 mx-auto">
+      <iframe class="lesson-video" src="https://www.youtube.com/embed/{{videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="lessons rounded col-10 col-lg-3 mx-auto">
+      <ul class="lessons-list text-white p-3">
+        <li class="">
+          <div class="link-icon">
+            <img src="{{URL}}/resources/svg/chevron-right.svg" alt="Ver aulas do módulo" class="icon-lesson icon--small">
+            <span class="link-name fw-semibold">{{moduleName}}</span>
+          </div>
+          <ul class="sub-menu">
+            {{lessonsLinks}}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->

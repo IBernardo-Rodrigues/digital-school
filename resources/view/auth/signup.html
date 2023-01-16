@@ -1,0 +1,48 @@
+<section class="signup mx-auto">
+
+  <div class="signup-top mb-4 d-flex flex-column align-items-center gap-4">
+    <h1 class="text-white">
+      Digital
+    </h1>
+    <h3 class="text-white">
+      Cadastro
+    </h3>
+  </div>
+
+  <div class="mx-auto">
+    <form method="POST" class="d-flex flex-column align-items-center gap-3">
+        <div class="form-group mb-3">
+          <label for="name" class="form-label text-white">
+            Nome *
+          </label>
+          <input type="text" name="username" placeholder="Seu nome" class="d-block text-white" required>
+        </div>
+        
+        <div class="form-group mb-3">
+          <label for="email" class="form-label text-white">
+            Email *
+          </label>
+          <input type="email" name="email" placeholder="seuemail@gmail.com" class="d-block text-white" required>
+        </div>
+        
+        <div class="form-group mb-3">
+          <label for="password" class="form-label text-white">
+            Senha *
+          </label>
+          <input type="password" name="password" placeholder="Sua senha" class="d-block text-white" required>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" name="send-data" value="Enviar" class="d-block mx-auto border-0 fw-bold">
+        </div>
+    </form>
+  </div>
+
+  <a href="{{URL}}/login" class="d-block mx-auto mt-3 text-center text-decoration-none">
+    Já tem uma conta? Clique aqui!
+  </a>
+</section>
+
+<section class="modals">
+  {{modals}}
+</section>
