@@ -23,4 +23,4 @@ const DATA_LAYER_CONFIG = [
 
 const CACHE_TIME = 10;
 
-const CACHE_DIR = 'C:/wampp/www/digital-school/cache';
+const CACHE_DIR = 'C:/wamp/www/digital-school/cache';
